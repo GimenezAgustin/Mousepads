@@ -1,0 +1,142 @@
+@import "variables";
+@import "estructura";
+
+body{
+	background-color: $colorFondo;
+}
+
+.cajaHijo{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	box-sizing: border-box;
+	justify-content: center;
+	td{
+		padding: 5px;
+	}
+}
+.caja{
+	margin: 10px 1px 10px 1px;
+	padding: 10px;
+	height: 100%;
+	.caja1__link{
+		color: #a888bd;
+		list-style: none;
+		text-decoration: none;
+	}
+	.caja1__link--especial{
+		color: white;
+		list-style: none;
+		text-decoration: none;
+	}
+}
+.formulario{
+	margin: 10px 5px 10px 5px;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	.formulario__link{
+		width: 100%;
+		padding: 10px;
+		display: flex;
+		flex-wrap: wrap;
+		align-content: center;
+		box-sizing: border-box;
+		justify-content: center;
+	}
+	.formulario__link--especial{
+		color: black;
+	}
+}
+@mixin banner($ancho){
+	background-image: $fondo;
+	min-height: $ancho;
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+	@if( $fondo == salaGamer1){
+		background-image: url('../imagenesMousepads/salaGamer1.jpg');
+		}@else if( $fondo == salaGamer2){
+		background-image: url('../imagenesMousepads/salaGamer2.jpg');
+	}
+	grid-area: fondoA;
+	overflow: hidden;
+	animation-name: fondoA;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+}
+.banner{
+	@include banner(500px);
+}
+.cajaHijo{
+	width: 100%;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	box-sizing: border-box;
+	justify-content: center;
+	td{
+		padding: 5px;
+	}
+}
+@for $i from 1 through 12{
+	miCol-#{$i}{
+		width: ($ancho/12)*$i;
+	}
+}
+#header .logo{
+	width: 350px;
+	margin-left: 30px;
+	img{
+	display: block;
+	width: 40%;
+	}
+}
+.botonera{
+	color: #590964b5;
+	ul{
+	list-style: none;
+	margin-right: 50px;
+	}
+	ul li{
+	display: inline-block;
+	}
+	a{
+	text-decoration: none;
+	font-size: 1em;
+	padding: 0 10px;
+	}
+}
+.fuente{
+	color: white;
+	font-size: 0.8em;
+	ul{
+	text-align: center;
+	line-height: 1.5;
+	text-decoration: none;
+	}
+	ol{
+	line-height: 1.5;
+	}
+}
+.footer{
+	background: #59096469;
+	padding: 30px;
+	display: flex;
+	flex: 2 2 10%;
+	margin-bottom: 50px;
+	line-height: 50px;
+	justify-content: space-between;
+	a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	}
+}

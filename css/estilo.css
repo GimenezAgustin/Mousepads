@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+*{
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	color: #590964b5;
+	width: 100%;
+	letter-spacing: 0.2em;
+}
+body{
+	background: linear-gradient(to bottom, black 40%, #590964b5 100%);
+	margin-right: 5%;
+	margin-left: 5%;
+}
+#grilla{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"fondoA fondoA"
+	"infoA infoB"
+	"infoC infoD"
+	"video video"
+	"footer footer"
+	;
+	grid-template-rows: 5% 15% 10% 10% 15% 5%;
+	grid-row-gap: 150px;
+	align-items: center;
+	justify-content: center;
+}
+#grilla1{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"fondoA fondoA"
+	"imagenes imagenes"
+	"titulo titulo"	
+	"descripcion descripcion"
+	"footer footer"
+	;
+	grid-template-rows: 10% 40% 15% 5% 25% 20%;
+	grid-template-columns: 50% 50%;
+	grid-column-gap: 5px;
+	grid-row-gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+#grilla2{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"fondoA fondoA"
+	"historia historia"	
+	"footer footer"
+	;
+	grid-template-rows: 5% 50% 30% 10%;
+	grid-row-gap: 10px;
+	align-items: center;
+	justify-content: center;
+}
+#grilla3{
+	display: grid;
+	grid-template-areas:
+	"header header"
+	"fondoA fondoA"
+	"productos productos"
+	"footer footer"
+	;
+	grid-template-rows: 5% 15% 40% 10%;
+	grid-row-gap: 150px;
+	align-items: center;
+	justify-content: center;
+}
+nav{
+	grid-area: nav;
+}
+header{
+	grid-area: header;
+	background-color: black;
+	min-height: 5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-self: stretch;
+	align-items: center;
+}
+.fondoA{
+	grid-area: fondoA;
+}
+.infoA{
+	padding: 10px;
+	margin: 10px;
+	grid-area: infoA;
+}
+.infoB{
+	padding: 10px;
+	margin: 10px;
+	grid-area: infoB;
+}
+.infoC{
+	padding: 10px;
+	margin: 10px;
+	grid-area: infoC;
+}
+.infoD{
+	padding: 10px;
+	margin: 10px;
+	grid-area: infoD;
+}
+.video{
+	grid-area: video;
+	justify-content: center;
+	align-items: center;
+}
+.historia1{
+	grid-area: historia;
+}
+.historia1{
+	margin: 10px;
+	padding: 10px;
+}
+.productos{
+	grid-area: productos;
+}
+.descripcion{
+	grid-area: descripcion;
+}
+.historia{
+	grid-area: historia;
+}
+.titulo{
+	grid-area: titulo;
+}
+.imagenes{
+	grid-area: imagenes;
+}
+.escala:hover{
+	scale: 1.01;
+}
+footer{	
+	grid-area: footer;
+	width: 100%;
+}
+@media only screen and (min-width: 768px){
+	body{
+		background: linear-gradient(to bottom, black 40%, #590964b5 100%);
+		color: black;
+	}
+}
+@media only screen and (min-width: 1024px){
+	body{
+		background: linear-gradient(to bottom, black 40%, #590964b5 100%);
+		color: black;
+	}
+}
+@media only screen and (min-width: 1200px){
+	body{
+		background: linear-gradient(to bottom, black 40%, #590964b5 100%);
+		color: black;
+	}
+}
+.fuenteR{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}
+.fuenteM{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+.fuenteB{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+.anchoAlto{
+	width: 100%;
+	align-content: center;
+	margin-right: 10%;
+}
+.miEstilo{
+	font-size: 32px;
+	color: ;
+}
+.anexo{
+	margin-top: 2em;
+	font-size: 2em;
+	color: #590964b5;
+	background-color: black;
+}
+.centrado{
+	text-align: center;
+	margin: auto;
+	justify-content: center;
+}
+.alejado li{
+	text-align: center;
+	justify-content: space-between;
+}
+@keyframes fondoA{
+	0%{
+        transform: scale(1);
+	}
+	100%{
+        transform: scale(1.028);
+	}
+}
+.fondoNegro{
+	background-color: black;
+}
+.fondoContactos{
+	color: white;
+}
+.orden{
+	margin: 10px 5px 10px 5px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: left;
+}
+.orden1{
+	margin: 10px 5px 10px 5px;
+	padding: 1em;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
+.borde{
+	border-bottom: 20px solid#000;
+}
+.bordeFino{
+	border-bottom: 5px solid#000;
+}
+.textoBlanco{
+	color: white;
+}
+
+.icono{
+	margin: 0.1%;
+	float: right;
+	right: 1%;
+	box-sizing: border-box;
+	position: fixed;
+	z-index: 100;
+	bottom: 1%;
+	cursor: pointer;
+}
+.boton:hover{
+    transform: rotate(15deg);
+}
