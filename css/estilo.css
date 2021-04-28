@@ -13,64 +13,6 @@ body{
 	margin-right: 5%;
 	margin-left: 5%;
 }
-#grilla{
-	display: grid;
-	grid-template-areas:
-	"header header"
-	"fondoA fondoA"
-	"infoA infoB"
-	"infoC infoD"
-	"video video"
-	"footer footer"
-	;
-	grid-template-rows: 5% 15% 10% 10% 15% 5%;
-	grid-row-gap: 150px;
-	align-items: center;
-	justify-content: center;
-}
-#grilla1{
-	display: grid;
-	grid-template-areas:
-	"header header"
-	"fondoA fondoA"
-	"imagenes imagenes"
-	"titulo titulo"	
-	"descripcion descripcion"
-	"footer footer"
-	;
-	grid-template-rows: 10% 40% 15% 5% 25% 20%;
-	grid-template-columns: 50% 50%;
-	grid-column-gap: 5px;
-	grid-row-gap: 10px;
-	align-items: center;
-	justify-content: center;
-}
-#grilla2{
-	display: grid;
-	grid-template-areas:
-	"header header"
-	"fondoA fondoA"
-	"historia historia"	
-	"footer footer"
-	;
-	grid-template-rows: 5% 50% 30% 10%;
-	grid-row-gap: 10px;
-	align-items: center;
-	justify-content: center;
-}
-#grilla3{
-	display: grid;
-	grid-template-areas:
-	"header header"
-	"fondoA fondoA"
-	"productos productos"
-	"footer footer"
-	;
-	grid-template-rows: 5% 15% 40% 10%;
-	grid-row-gap: 150px;
-	align-items: center;
-	justify-content: center;
-}
 nav{
 	grid-area: nav;
 }
@@ -83,9 +25,6 @@ header{
 	justify-content: space-between;
 	align-self: stretch;
 	align-items: center;
-}
-.fondoA{
-	grid-area: fondoA;
 }
 .infoA{
 	padding: 10px;
@@ -113,26 +52,8 @@ header{
 	align-items: center;
 }
 .historia1{
-	grid-area: historia;
-}
-.historia1{
 	margin: 10px;
 	padding: 10px;
-}
-.productos{
-	grid-area: productos;
-}
-.descripcion{
-	grid-area: descripcion;
-}
-.historia{
-	grid-area: historia;
-}
-.titulo{
-	grid-area: titulo;
-}
-.imagenes{
-	grid-area: imagenes;
 }
 .escala:hover{
 	scale: 1.01;
